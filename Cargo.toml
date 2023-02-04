@@ -1,0 +1,17 @@
+[package]
+name = "windows-volume-mixer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sysinfo = "0.27.7"
+
+[dependencies.windows]
+	version = "0.44.0"
+	features = [
+		"implement",
+    "Win32_Media_Audio",
+		"Win32_System_Com",
+		"Win32_Foundation",
+		"Win32_System_Com_StructuredStorage",
+	]
